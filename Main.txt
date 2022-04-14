@@ -4,6 +4,8 @@ public class Main {
 	
 		final int MAX =200;
 		
+		int cpt =0;
+		
 		Liste l1 = new Liste(); 
 		
 		Client c1 = new Client("Thomas", "Tremblay", "1027 rue 2", 137);
