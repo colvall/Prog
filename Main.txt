@@ -1,16 +1,18 @@
 public class Main {
 
 	public static void main(String[] args) {
+	
+		final int MAX =100;
 		
 		Liste l1 = new Liste(); 
 		
 		Client c1 = new Client("Thomas", "Tremblay", "1027 rue 2", 137);
 		l1.rajouterClient(c1);
 		
-		Client c2 = new Client("Noah", "Gagné", "520 rue 4", 469);
+		Client c2 = new Client("Noah", "GagnÃ©", "520 rue 4", 469);
 		l1.rajouterClient(c2);
 		
-		Client c3 = new Client("Adam", "Lévesque", "2363 rue 2", 622);
+		Client c3 = new Client("Adam", "LÃ©vesque", "2363 rue 2", 622);
 		l1.rajouterClient(c3);
 		
 		Client c4 =  new Client("Xavier", "Caron", "1283 rue 6", 882);
@@ -26,7 +28,7 @@ public class Main {
 		for (int i = 0; i < l1.getNbClients(); i++) {
 			System.out.println(l1.getListe()[i].toString()+
 					"\nPalier: " + l1.getListe()[i].getPalier()+
-					"\nCoût mensuel: " + l1.getListe()[i].calculerTotal() + "$");
+					"\nCoÃ»t mensuel: " + l1.getListe()[i].calculerTotal() + "$");
 		}
 		
 		// Affiche le nombre de clients par palier
@@ -34,8 +36,8 @@ public class Main {
 		System.out.println("Palier 2: " + l1.rechercherPalier(2) + " clients");
 		System.out.println("Palier 3: " + l1.rechercherPalier(3) + " clients");
 		
-		// Affiche le nom et l'adresse du client ayant la plus grande consommation d'électricité
-		System.out.println("\nClient ayant la plus grande consommation d'électricité: \n"
+		// Affiche le nom et l'adresse du client ayant la plus grande consommation d'Ã©lectricitÃ©
+		System.out.println("\nClient ayant la plus grande consommation d'Ã©lectricitÃ©: \n"
 				+ "Nom: " + l1.consommationMax().getName() + 
 				"\nAdresse: " + l1.consommationMax().getAdress());
 	}
