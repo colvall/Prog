@@ -2,9 +2,7 @@ public class Main {
 
 	public static void main(String[] args) {
 	
-		final int MAX =200;
 		
-		int cpt =0;
 		
 		Liste l1 = new Liste(); 
 		
